@@ -9,6 +9,9 @@ problem: veleocity tracking, so RL algorithm tries to learn low level control to
 ## Video Demo (before training)
 
 
+
+<video src="https://github.com/user-attachments/assets/63ef3e99-f12d-4a48-8e76-dd26b4922569" width="200" controls></video>
+
 This video shows the quadpedal robot learning to walk step 0 of training.
 
 
