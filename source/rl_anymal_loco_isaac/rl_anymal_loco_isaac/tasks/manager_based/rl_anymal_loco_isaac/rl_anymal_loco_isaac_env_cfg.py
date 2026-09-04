@@ -2,7 +2,7 @@
 # All rights reserved.
 #
 # SPDX-License-Identifier: BSD-3-Clause
-
+# Modified by Prithvi :)
 import math
 
 import isaaclab.sim as sim_utils
@@ -31,7 +31,7 @@ from isaaclab_assets.robots.cartpole import CARTPOLE_CFG  # isort:skip
 ##
 
 
-@configclass
+@configclass # decorator for cfg for the class: so that we don't have to manually initialize it or write custom functions copy, replace
 class RlAnymalLocoIsaacSceneCfg(InteractiveSceneCfg):
     """Configuration for a cart-pole scene."""
 
