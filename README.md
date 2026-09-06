@@ -38,10 +38,35 @@ source isaaclab_env/bin/activate
 python scripts/skrl/train.py --task=Template-baseline-Isaac-Velocity-Rough-Anymal-D-v0 --num_envs 1 --max_iterations 5 --video
 ```
 
+Baseline training with PPO
+
+```bash
+python scripts/skrl/train.py \
+  --task Template-baseline-Isaac-Velocity-Rough-Anymal-D-v0 \
+  --algorithm PPO \
+  --num_envs 512 \
+  --max_iterations 1500 \
+  --seed 42 \
+  --device cuda:0 \
+  --headless \
+  --video \
+  --video_interval 6000 \
+  --video_length 300
+
+```
+
 ## Playing the task:
 
 ```bash
 python scripts/skrl/play.py   --task Template-baseline-Isaac-Velocity-Rough-Anymal-D-Play-v0   --checkpoint ./logs/skrl/anymal_d_rough/2026-09-04_14-55-13_ppo_torch/checkpoints/agent_120.pt   --num_envs 1   --real-time
+
+```
+
+Baseline PPO playing
+
+<video src="https://github.com/user-attachments/assets/63ef3e99-f12d-4a48-8e76-dd26b4922569" width="200" controls></video>
+```bash
+python scripts/skrl/play.py   --task Template-baseline-Isaac-Velocity-Rough-Anymal-D-Play-v0   --checkpoint "./logs/skrl/anymal_d_rough/2026-09-06_14-59-27_ppo_torch/checkpoints/agent_36000.pt"   --num_envs 1   --video   --video_length 500   --headless
 
 ```
 
