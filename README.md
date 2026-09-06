@@ -64,7 +64,7 @@ python scripts/skrl/play.py   --task Template-baseline-Isaac-Velocity-Rough-Anym
 
 Baseline PPO playing
 
-<video src="https://github.com/user-attachments/assets/63ef3e99-f12d-4a48-8e76-dd26b4922569" width="200" controls></video>
+<video src="https://github.com/user-attachments/assets/dbf85ac1-ed95-4948-ac51-e8ef33418968" width="200" controls></video>
 ```bash
 python scripts/skrl/play.py   --task Template-baseline-Isaac-Velocity-Rough-Anymal-D-Play-v0   --checkpoint "./logs/skrl/anymal_d_rough/2026-09-06_14-59-27_ppo_torch/checkpoints/agent_36000.pt"   --num_envs 1   --video   --video_length 500   --headless
 
