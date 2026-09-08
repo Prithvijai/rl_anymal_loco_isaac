@@ -19,6 +19,7 @@ This video shows the quadpedal robot learning to walk step 0 of training.
 
 ```bash 
 source isaaclab_env/bin/activate
+python -m pip install -e source/rl_anymal_loco_isaac/
 
 ```
 - Verify that the extension is correctly installed by:
